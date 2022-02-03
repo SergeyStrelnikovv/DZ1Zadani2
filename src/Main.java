@@ -6,10 +6,10 @@ public class Main {
 
             if (pay > 1000){
                 bonus = pay / 100;
-                balance = balance + pay + bonus;
             } else {
-                balance = pay + balance;
+                bonus = 0;
             }
+            balance = balance + pay + bonus;
             System.out.println("Ваш баланс равен:" + balance);
         }
 }
